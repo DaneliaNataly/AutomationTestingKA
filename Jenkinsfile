@@ -27,9 +27,9 @@ pipeline {
                         bat """chcp 65001
                         //call vrunner compileepf features/step_definitions features/step_definitions 
                         call vrunner vanessa"""
-                    }   catch(Exception Exc) {
-                        currentBuild.result = 'UNSTABLE'
-                    }
+                    }  // catch(Exception Exc) {
+                       // currentBuild.result = 'UNSTABLE'
+                    //}
                 }
             }
         }
